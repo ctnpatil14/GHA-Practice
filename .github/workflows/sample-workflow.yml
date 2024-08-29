@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: string
-          run:echo "hey my first action"
+          run: echo "My first workflow"
       - name: multiline script
-          run:|
+          run:
             node -v
             npm -v
             
