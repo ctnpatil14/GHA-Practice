@@ -9,7 +9,7 @@ jobs:
       - name: string
           run: echo "My first workflow"
       - name: multiline script
-          run:
+          run: |
             node -v
             npm -v
             
