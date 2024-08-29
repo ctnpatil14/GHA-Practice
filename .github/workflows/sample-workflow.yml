@@ -13,3 +13,11 @@ jobs:
             node -v
             npm -v
             pwd
+            uname -a 
+            cat /etc/resolv.conf
+      - name: Python commands
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
+
