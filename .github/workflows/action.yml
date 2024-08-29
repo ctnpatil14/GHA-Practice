@@ -14,5 +14,5 @@ jobs:
           who-to-greet: chetan
 
       - name: Get the output time
-        run: echo "${{ steps.hello.output.time }}"
+        run: echo "${{ steps.hello.outputis.time }}"
 
