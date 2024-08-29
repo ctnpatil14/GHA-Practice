@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: simple javascript actions
         id: hello 
-        uses: actions/hello-world-javascript-action@v2
+        uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: chetan
 
