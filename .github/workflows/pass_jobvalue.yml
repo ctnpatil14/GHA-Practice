@@ -1,6 +1,10 @@
+name: Pass value ENV var
+on: [push]
+
 jobs:
   job1:
     runs-on: ubuntu-latest
+   
     steps:
       - name: Set environment variable
         run: echo "MY_VAR=Hello from job1" >> $GITHUB_ENV
