@@ -15,5 +15,4 @@ jobs:
     steps:
       - name: Access environment variable
         run: | 
-          echo "Received variable: $MY_VAR"
-
+          echo "Received variable: {{env.MY_VAR}}"
