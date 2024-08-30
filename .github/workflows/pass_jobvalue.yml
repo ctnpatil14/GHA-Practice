@@ -1,6 +1,6 @@
 name: Pass value ENV var
 on: [push]
-
+  branches: "main 
 jobs:
   job1:
     runs-on: ubuntu-latest
