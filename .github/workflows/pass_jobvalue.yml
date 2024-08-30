@@ -14,5 +14,6 @@ jobs:
     needs: job1
     steps:
       - name: Access environment variable
-        run: echo "Received variable: $MY_VAR"
+        run: | 
+          echo "Received variable: $MY_VAR"
 
