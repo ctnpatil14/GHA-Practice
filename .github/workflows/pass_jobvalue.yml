@@ -12,7 +12,15 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     needs: job1
+    #steps:
+    #  - name: Access environment variable
+    #    run: | 
+    #      echo "Received variable: {{env.MY_VAR
+
+    env:
+      MY_VAR: ${{ github.env.MY_VAR }}
     steps:
-      - name: Access environment variable
-        run: | 
-          echo "Received variable: {{env.MY_VAR}}"
+      - name: Access variable
+        run: |
+          echo "Received variable: $MY_VAR"
+    
