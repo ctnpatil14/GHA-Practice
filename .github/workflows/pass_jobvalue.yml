@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set environment variable
-        run: echo "MY_VAR=Hello from job1" >> $GITHUB_ENV
+        run: echo "MY_VAR=Hello from job2" >> $GITHUB_ENV
 
   job2:
     runs-on: ubuntu-latest
