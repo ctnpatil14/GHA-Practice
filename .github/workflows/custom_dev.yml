@@ -1,17 +1,18 @@
-name : custom env variable
+name: Custom Environment Vriables
 
 on: push
 
 env:
-	subscribe: Subscribe
+  SUBSCRIBE: Subscribe
 
 jobs:
-	subscribe-my-channel:
-		runs-on: ubuntu-latest
-		env:
-			like: please like share
-	  	steps:
-			- name: subscribe and like
-			  run: echo "$LIKE and $SUBSCRIBE"
-			  env: 
-				channel: cricmania
+  Subscribe-my-channel:
+    runs-on: ubuntu-latest
+    env:
+      LIKE: Please like share
+    steps:
+      - name: "Please like share and Subscribe our DevOps Hint channel."
+        run: echo "$LIKE and $SUBSCRIBE our $CHANNEL_NAME channel."
+
+        env:
+          CHANNEL_NAME: DevOps Hint
